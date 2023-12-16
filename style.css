@@ -50,17 +50,49 @@ header ul {
   letter-spacing: -0.01px;
 }
 
+nav ul {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+nav ul li button {
+  height: 40px;
+  width: 91px;
+  border: 2px solid #646e7a;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.8px;
+  letter-spacing: -0.01px;
+  color: var(--text-color);
+}
+
+#checkout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 85px;
+  margin-bottom: 139px;
+  gap: 33px;
+}
+
 .main_container {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: fit-content;
+  box-shadow: 0px 5px 15px 0px #0000000d;
+  box-shadow: 0px 15px 35px 0px #2b404e18;
+  border-radius: 10px;
 }
 
 .form_container {
   background-color: white;
   width: 580px;
-  margin: 85px 0;
-  border-radius: 0px, 6px, 6px, 0px;
+  border-radius: 10px 0px 0px 10px;
 }
 
 .title_box {
@@ -196,9 +228,9 @@ button a {
 .detail_container {
   background-color: var(--right-color);
   width: 312px;
-  margin: 85px 0;
   border-radius: 6px, 0px, 0px, 6px;
   color: white;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .detail_box {
@@ -280,7 +312,7 @@ span.currency {
   letter-spacing: -0.01px;
 }
 
-.testimonial{
+.testimonial {
   font-weight: 400;
   font-style: italic;
   font-size: 18px;
@@ -288,16 +320,27 @@ span.currency {
   letter-spacing: -0.01px;
 }
 
-.testimonial_profile{
+.testimonial_profile {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 14px
+  gap: 14px;
 }
 
-.testimonial_name{
+.testimonial_name {
   font-weight: 700;
   font-size: 16px;
   line-height: 19.2px;
   letter-spacing: -0.01px;
+}
+
+footer {
+  color: #636b6f;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
+footer a {
+  color: #31708f;
 }
