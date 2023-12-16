@@ -15,6 +15,8 @@
   --background-color: #f5f8fa;
   --placeholder-color: #edeff2;
   --btn-color: #038e7d;
+  --right-color: #1179bf;
+  --right-border-color: #b9f5ff;
 }
 
 body {
@@ -71,6 +73,7 @@ header ul {
   font-weight: 400;
   line-height: 36px;
   padding: 41px 48px 24px 48px;
+  text-shadow: 2px 2px 6px #00000050;
 }
 
 .section_1,
@@ -80,8 +83,8 @@ header ul {
 }
 /* check justify content */
 .section_3 {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
   margin: 39px 49px 46.9px 49px;
   width: 483px;
   align-items: center;
@@ -162,9 +165,9 @@ input::placeholder {
   padding: 10px 13px 27px 10px;
 }
 
-.section_wrapper{
-    display: flex;
-    justify-content: center;
+.section_wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .support_text {
@@ -175,17 +178,126 @@ input::placeholder {
   padding: 23px 0 21px 0;
 }
 
-.buy_btn{
-    width: 100%;
-    padding: 14px;
-    border-radius: 5px;
-    background-color: var(--btn-color);
+.buy_btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 5px;
+  background-color: var(--btn-color);
 }
 
-button a{
-    color: white;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21.6px;
-    letter-spacing: -0.4px;
+button a {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  letter-spacing: -0.4px;
+}
+
+.detail_container {
+  background-color: var(--right-color);
+  width: 312px;
+  margin: 85px 0;
+  border-radius: 6px, 0px, 0px, 6px;
+  color: white;
+}
+
+.detail_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 42px 44px 0 37px;
+}
+
+.purchased_plan {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.01px;
+  padding-bottom: 5px;
+}
+
+.purchased_plan_price {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  padding-bottom: 3px;
+}
+
+span.currency {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.8px;
+  letter-spacing: -0.01px;
+  padding-top: 13px;
+}
+
+.price {
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 72px;
+  letter-spacing: -0.01px;
+}
+
+.duration {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  letter-spacing: -0.01px;
+}
+
+.product_description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.01px;
+  font-style: italic;
+}
+
+.product_details,
+.product_offering_list,
+.upsell {
+  padding-bottom: 36px;
+}
+
+.product_offering_list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+}
+
+.product_offering_list ul li {
+  display: flex;
+  flex-direction: row;
+  gap: 11px;
+  align-content: center;
+}
+
+.upsell_text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.01px;
+}
+
+.testimonial{
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.01px;
+}
+
+.testimonial_profile{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px
+}
+
+.testimonial_name{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.2px;
+  letter-spacing: -0.01px;
 }
