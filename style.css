@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Helvetica, sans-serif;
+  box-sizing: border-box;
+  border-style: none;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+:root {
+  --text-color: #1d2c3c;
+  --border-color: #e0e6ea;
+  --border-color-2: #f5f7fa;
+  --background-color: #f5f8fa;
+  --placeholder-color: #edeff2;
+  --btn-color: #038e7d;
+}
+
+body {
+  background-color: var(--background-color);
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 28px 40px 0;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 30px;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  gap: 42px;
+  list-style: none;
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.8px;
+  letter-spacing: -0.01px;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form_container {
+  background-color: white;
+  width: 580px;
+  margin: 85px 0;
+  border-radius: 0px, 6px, 6px, 0px;
+}
+
+.title_box {
+  border-bottom: 2px solid var(--border-color-2);
+}
+
+.checkout_title {
+  color: var(--text-color);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  padding: 41px 48px 24px 48px;
+}
+
+.section_1,
+.section_2 {
+  padding: 34px 49px 41px 47px;
+  border-bottom: 2px solid var(--border-color-2);
+}
+/* check justify content */
+.section_3 {
+    display: flex;
+    flex-direction: column;
+  margin: 39px 49px 46.9px 49px;
+  width: 483px;
+  align-items: center;
+  justify-content: center;
+}
+
+.section_title,
+.support {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 13px;
+}
+
+.input_line {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.input_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+}
+
+.input_container.credit_card_info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0;
+}
+
+.input_line {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  display: flex;
+  border-radius: 3px;
+  height: 36px;
+  font-weight: 400;
+  background-color: var(--placeholder-color);
+  padding: 0 13px;
+  margin: 7px 0;
+  cursor: pointer;
+}
+
+input[type="text"]#credit_card {
+  border-radius: 3px 0 0 3px;
+}
+
+input[type="text"]#exp_date {
+  border-radius: 0;
+}
+
+input[type="text"]#cvc {
+  border-radius: 0 3px 3px 0;
+}
+
+input::placeholder {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 16.8px;
+  font-weight: 400;
+  padding: 10px 13px 27px 10px;
+}
+
+.section_wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.support_text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: -0.01px;
+  padding: 23px 0 21px 0;
+}
+
+.buy_btn{
+    width: 100%;
+    padding: 14px;
+    border-radius: 5px;
+    background-color: var(--btn-color);
+}
+
+button a{
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+    letter-spacing: -0.4px;
+}
